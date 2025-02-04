@@ -1,11 +1,11 @@
 import "./App.css"
-import ClickCounter from "./components/ClickCounter"
+import Calculator from "./components/Calculator"
 
 function App() {
   return (
     <div>
-      <h1>Exercice - Click Counter</h1>
-      <ClickCounter />
+      <h1>Exercice - Calculatrice</h1>
+      <Calculator />
     </div>
   )
 }
