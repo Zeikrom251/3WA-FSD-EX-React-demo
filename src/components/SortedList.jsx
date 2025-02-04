@@ -16,7 +16,7 @@ const SortedList = ({ numbers }) => {
   }, [index, numbers])
 
   return (
-    <div className="list flex gap-2 text-lg font-bold text-blue-500">
+    <div>
       {sortedNumbers.map((num, index) => (
         <span key={index}>{num}</span>
       ))}

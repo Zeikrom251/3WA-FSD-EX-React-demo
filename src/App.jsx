@@ -7,10 +7,10 @@ function App() {
   const randomNumbers = generateRandomNumbers()
   const sortedNumbers = [...randomNumbers].sort((a, b) => a - b)
   return (
-    <div className="flex flex-col items-center gap-6 p-10">
-      <h1 className="text-3xl font-bold">Challenge - Liste Aléatoire</h1>
+    <div>
+      <h1>Challenge - Liste Aléatoire</h1>
       <RandomList numbers={randomNumbers} />
-      <h2 className="text-2xl mt-4">Liste Ordonnée</h2>
+      <h2>Liste Ordonnée</h2>
       <SortedList numbers={sortedNumbers} />
     </div>
   )
