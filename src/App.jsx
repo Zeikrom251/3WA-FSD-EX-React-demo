@@ -1,12 +1,17 @@
 import "./App.css"
-import Counter from "./components/Counter"
+import RandomList from "./components/RandomList"
+import SortedList from "./components/SortedList"
+import generateRandomNumbers from "./utils/generateRandomNumbers"
 
 function App() {
+  const randomNumbers = generateRandomNumbers()
+  const sortedNumbers = [...randomNumbers].sort((a, b) => a - b)
   return (
-    <div>
-      <h1>Compteur avec contrôle</h1>
-      <Counter increment={1} />
-      <Counter increment={2} />
+    <div className="flex flex-col items-center gap-6 p-10">
+      <h1 className="text-3xl font-bold">Challenge - Liste Aléatoire</h1>
+      <RandomList numbers={randomNumbers} />
+      <h2 className="text-2xl mt-4">Liste Ordonnée</h2>
+      <SortedList numbers={sortedNumbers} />
     </div>
   )
 }
