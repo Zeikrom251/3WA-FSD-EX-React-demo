@@ -1,12 +1,11 @@
 import "./App.css"
-import Counter from "./components/Counter"
+import ClickCounter from "./components/ClickCounter"
 
 function App() {
   return (
     <div>
-      <h1>Compteur avec contrôle</h1>
-      <Counter increment={1} />
-      <Counter increment={2} />
+      <h1>Exercice - Click Counter</h1>
+      <ClickCounter />
     </div>
   )
 }
